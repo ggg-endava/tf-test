@@ -36,16 +36,16 @@ provider "aws" {
 
 # Add .gitignore file in this directory with the terraform.tfvars
 
-resource "aws_instance" "tc_instance" {
-  ami           = "ami-08af887b5731562d3"
-  instance_type = "t3.nano"
+# resource "aws_instance" "tc_instance" {
+#   ami           = "ami-08af887b5731562d3"
+#   instance_type = "t3.nano"
 
-  tags = {
-    Name = "TC-triggered-instance"
-  }
-}
+#   tags = {
+#     Name = "TC-triggered-instance"
+#   }
+# }
 
 
-resource "aws_iam_user" "user_99" {
-  name  = "user-99"
-}
+# resource "aws_iam_user" "user_99" {
+#   name  = "user-99"
+# }
